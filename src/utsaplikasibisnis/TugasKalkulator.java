@@ -81,20 +81,50 @@ public class TugasKalkulator extends javax.swing.JFrame {
         });
 
         jbtn5.setText("5");
+        jbtn5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbtn5ActionPerformed(evt);
+            }
+        });
 
         jbtn6.setText("6");
+        jbtn6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbtn6ActionPerformed(evt);
+            }
+        });
 
         jbtnkurang.setText("-");
 
         jbtn7.setText("7");
+        jbtn7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbtn7ActionPerformed(evt);
+            }
+        });
 
         jbtn8.setText("8");
+        jbtn8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbtn8ActionPerformed(evt);
+            }
+        });
 
         jbtn9.setText("9");
+        jbtn9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbtn9ActionPerformed(evt);
+            }
+        });
 
         jbtnkali.setText("x");
 
         jbtn0.setText("0");
+        jbtn0.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbtn0ActionPerformed(evt);
+            }
+        });
 
         jbtnkoma.setText(",");
 
@@ -220,6 +250,40 @@ public class TugasKalkulator extends javax.swing.JFrame {
                 + jbtn4.getText();
         Jtext.setText(jbtn4Text);        // TODO add your handling code here:
     }//GEN-LAST:event_jbtn4ActionPerformed
+
+    private void jbtn5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtn5ActionPerformed
+        String jbtn5Text = Jtext.getText()
+                + jbtn5.getText();
+        Jtext.setText(jbtn5Text);        // TODO add your handling code here:
+    }//GEN-LAST:event_jbtn5ActionPerformed
+
+    private void jbtn6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtn6ActionPerformed
+        String jbtn6Text = Jtext.getText()
+                + jbtn6.getText();
+        Jtext.setText(jbtn6Text);        // TODO add your handling code here:
+    }//GEN-LAST:event_jbtn6ActionPerformed
+
+    private void jbtn7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtn7ActionPerformed
+        String jbtn7Text = Jtext.getText()
+                + jbtn7.getText();
+        Jtext.setText(jbtn7Text);        // TODO add your handling code here:
+    }//GEN-LAST:event_jbtn7ActionPerformed
+
+    private void jbtn8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtn8ActionPerformed
+        String jbtn8Text = Jtext.getText()
+                + jbtn8.getText();
+        Jtext.setText(jbtn8Text);        // TODO add your handling code here:
+    }//GEN-LAST:event_jbtn8ActionPerformed
+
+    private void jbtn9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtn9ActionPerformed
+        String jbtn0Text = Jtext.getText()
+                + jbtn0.getText();
+        Jtext.setText(jbtn0Text);        // TODO add your handling code here:
+    }//GEN-LAST:event_jbtn9ActionPerformed
+
+    private void jbtn0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtn0ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jbtn0ActionPerformed
 
     /**
      * @param args the command line arguments
