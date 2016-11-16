@@ -10,9 +10,11 @@ package utsaplikasibisnis;
  * @author sigit
  */
 public class TugasKalkulator extends javax.swing.JFrame {
-private double total1 = 0;
-private double total2 = 0;
-private char pilih;
+
+    private double total1 = 0;
+    private double total2 = 0;
+    private char pilih;
+
     public TugasKalkulator() {
         initComponents();
     }
@@ -56,6 +58,11 @@ private char pilih;
         });
 
         jbtn2.setText("2");
+        jbtn2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbtn2ActionPerformed(evt);
+            }
+        });
 
         jbtn3.setText("3");
 
@@ -178,11 +185,18 @@ private char pilih;
         }// </editor-fold>//GEN-END:initComponents
 
     private void jbtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtn1ActionPerformed
-    String jbtn1Text = Jtext.getText()
-            + jbtn1.getText();
-    Jtext.setText( jbtn1Text );
-    // TODO add your handling code here:
+        String jbtn1Text = Jtext.getText()
+                + jbtn1.getText();
+        Jtext.setText(jbtn1Text);
+        // TODO add your handling code here:
     }//GEN-LAST:event_jbtn1ActionPerformed
+
+    private void jbtn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtn2ActionPerformed
+        String jbtn2Text = Jtext.getText()
+                + jbtn2.getText();
+        Jtext.setText(jbtn2Text);
+// TODO add your handling code here:
+    }//GEN-LAST:event_jbtn2ActionPerformed
 
     /**
      * @param args the command line arguments
