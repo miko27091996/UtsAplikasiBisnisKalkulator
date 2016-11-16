@@ -137,8 +137,18 @@ public class TugasKalkulator extends javax.swing.JFrame {
         });
 
         jbtnkoma.setText(",");
+        jbtnkoma.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbtnkomaActionPerformed(evt);
+            }
+        });
 
         jbtnhapus.setText("C");
+        jbtnhapus.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbtnhapusActionPerformed(evt);
+            }
+        });
 
         jbtnbagi.setText("\\");
             jbtnbagi.addActionListener(new java.awt.event.ActionListener() {
@@ -150,6 +160,11 @@ public class TugasKalkulator extends javax.swing.JFrame {
             jbtnplusminus.setText("+/-");
 
             jbtnsmdgn.setText("=");
+            jbtnsmdgn.addActionListener(new java.awt.event.ActionListener() {
+                public void actionPerformed(java.awt.event.ActionEvent evt) {
+                    jbtnsmdgnActionPerformed(evt);
+                }
+            });
 
             javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
             getContentPane().setLayout(layout);
@@ -322,6 +337,40 @@ public class TugasKalkulator extends javax.swing.JFrame {
         getOperator(button_text);        // TODO add your handling code here:
     }//GEN-LAST:event_jbtnbagiActionPerformed
 
+    private void jbtnkomaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnkomaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jbtnkomaActionPerformed
+
+    private void jbtnhapusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnhapusActionPerformed
+        total2 = 0;
+        Jtext.setText("");// TODO add your handling code here:
+    }//GEN-LAST:event_jbtnhapusActionPerformed
+
+    private void jbtnsmdgnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnsmdgnActionPerformed
+        switch (pilih) {
+            case '+':
+                total2 = total1
+                        + Double.parseDouble(Jtext.getText());
+                break;
+            case '-':
+                total2 = total1
+                        - Double.parseDouble(Jtext.getText());
+                break;
+            case '*':
+                total2 = total1
+                        * Double.parseDouble(Jtext.getText());
+                break;
+            case '/':
+                total2 = total1
+                        / Double.parseDouble(Jtext.getText());
+                break;
+
+        }
+        Jtext.setText(Double.toString(total2));
+        total1 = 0;
+// TODO add your handling code here:
+    }//GEN-LAST:event_jbtnsmdgnActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -380,6 +429,6 @@ public class TugasKalkulator extends javax.swing.JFrame {
     // End of variables declaration//GEN-END:variables
 
     private void getOperator(String button_text) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        //To change body of generated methods, choose Tools | Templates.
     }
 }

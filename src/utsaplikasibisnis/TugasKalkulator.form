@@ -234,11 +234,17 @@
       <Properties>
         <Property name="text" type="java.lang.String" value=","/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbtnkomaActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jbtnhapus">
       <Properties>
         <Property name="text" type="java.lang.String" value="C"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbtnhapusActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jbtnbagi">
       <Properties>
@@ -257,6 +263,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="="/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbtnsmdgnActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>
