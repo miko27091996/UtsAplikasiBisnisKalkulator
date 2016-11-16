@@ -429,6 +429,8 @@ public class TugasKalkulator extends javax.swing.JFrame {
     // End of variables declaration//GEN-END:variables
 
     private void getOperator(String button_text) {
-        //To change body of generated methods, choose Tools | Templates.
+       pilih = button_text.charAt(0);
+       total1=total1+ Double.parseDouble(Jtext.getText());
+        Jtext.setText("");//To change body of generated methods, choose Tools | Templates.
     }
 }
