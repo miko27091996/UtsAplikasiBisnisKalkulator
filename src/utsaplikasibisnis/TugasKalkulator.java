@@ -74,6 +74,11 @@ public class TugasKalkulator extends javax.swing.JFrame {
         jbtntambah.setText("+");
 
         jbtn4.setText("4");
+        jbtn4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbtn4ActionPerformed(evt);
+            }
+        });
 
         jbtn5.setText("5");
 
@@ -209,6 +214,12 @@ public class TugasKalkulator extends javax.swing.JFrame {
         Jtext.setText(jbtn3Text);
         // TODO add your handling code here:
     }//GEN-LAST:event_jbtn3ActionPerformed
+
+    private void jbtn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtn4ActionPerformed
+        String jbtn4Text = Jtext.getText()
+                + jbtn4.getText();
+        Jtext.setText(jbtn4Text);        // TODO add your handling code here:
+    }//GEN-LAST:event_jbtn4ActionPerformed
 
     /**
      * @param args the command line arguments
